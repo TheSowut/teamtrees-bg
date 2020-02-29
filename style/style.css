@@ -1,0 +1,639 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mainPanel1 {
+  background: url("../images/wallpaper.jpg") right top fixed no-repeat;
+  background-size: 100% 100%;
+}
+
+.scrollButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10%;
+  text-align: center;
+  display: block;
+}
+
+#scrollToTop {
+  display: none;
+  width: 6em;
+  height: 3em;
+  background-color: rgba(28, 209, 23, 0.5);
+  box-shadow: 2px 2px rgb(0, 0, 0);
+  border-radius: 10%;
+}
+
+#scrollToTop:hover {
+  background-color: rgba(5, 176, 1, 0.5);
+}
+
+#scrollToTop span {
+  font-size: 150%;
+  font-family: 'Neucha', cursive;
+  text-shadow: 1px 1px white;
+}
+
+header {
+  max-width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0);
+}
+
+.headerTitle {
+  width: 20%;
+  display: inline-block;
+}
+
+#logo {
+  max-width: 100%;
+  margin-left: 5%;
+}
+
+#logo:hover {
+  animation-name: logoPinch;
+  animation-duration: 1.6s;
+  animation-fill-mode: forwards;
+}
+
+.headerSocial {
+  float: right;
+  width: 23%;
+}
+
+.headerSocial img {
+  max-width: 15%;
+  margin: 5% 5%;
+}
+
+.headerSocial a img:hover {
+  animation-name: socialLinkEnlarge;
+  animation-duration: 2s;
+}
+
+#reddit {
+  max-width: 10%;
+}
+
+nav {
+  width: 50%;
+  margin: 5em auto;
+  margin-bottom: 10%;
+  height: 1cm;
+  color: white;
+}
+
+#btns {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#btns li {
+  font-family: 'Nunito', sans-serif;
+}
+
+#btns li a {
+  text-decoration: none;
+  font-size: 150%;
+  padding: 10px;
+  border: solid black;
+  border-radius: 10%;
+  box-shadow: 3px 3px black;
+  color: black;
+}
+
+#btns li a:hover {
+  animation-name: btnsHover;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#leftPanel {
+  width: 30%;
+  height: 10cm;
+  border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  margin-bottom: 10%;
+  overflow: auto;
+}
+
+#leftPanel:hover {
+  color: rgb(255, 255, 255);
+}
+
+#leftPanel h3{
+  background-color: rgba(41, 170, 25, 0.8);
+  font-family: 'Caveat', cursive;
+  font-size: 1.8em;
+  height: auto;
+  text-align: center;
+  font-size: 1.9em;
+  border-radius: 110px;
+  width: 100%;
+  margin: auto;
+}
+
+#leftPanel p {
+  padding-top: 2%;
+  margin: 3% 5%;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  text-indent: 30px;
+  line-height: 25px;
+}
+
+#leftPanel a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+main {
+  width: 30%;
+  height: 10cm;
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: auto;
+}
+
+main:hover {
+  color: rgb(255, 255, 255);
+}
+
+main h3{
+  background-color: rgba(245, 123, 0, 0.8);
+  font-family: 'Caveat', cursive;
+  font-size: 1.9em;
+  height: auto;
+  text-align: center;
+  border-radius: 110px;
+  width: 100%;
+  margin: auto;
+}
+
+main p {
+  padding-top: 2%;
+  margin: 3% 5%;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  text-indent: 30px;
+  line-height: 25px;
+}
+
+#rightPanel {
+  width: 30%;
+  height: 10cm;
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: auto;
+}
+
+#rightPanel:hover {
+  color: rgb(255, 255, 255);
+}
+
+#rightPanel h3{
+  background-color: rgba(57, 148, 230, 0.8);
+  font-family: 'Caveat', cursive;
+  font-size: 1.9em;
+  height: auto;
+  text-align: center;
+  border-radius: 110px;
+  width: 100%;
+  margin: auto;
+}
+
+#rightPanel p {
+  padding-top: 2%;
+  margin: 3% 5%;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  text-indent: 30px;
+  line-height: 25px;
+}
+
+.newsAndGalleryBackground {
+  background: url("../images/wallpaper2.jpg") right top fixed no-repeat;
+  background-size: 100% 100%;
+}
+
+.newsAndGallery {
+  width: 90%;
+  height: auto;
+  margin: 0 5%;
+  display: flex;
+}
+
+#news {
+  width: 50%;
+  height: auto;
+}
+
+#news h4 {
+  margin: 5% auto;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Caveat', cursive;
+  background-color: rgba(14, 44, 150, 0.5);
+  width: 50%;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.newsInfo {
+  width: 90%;
+  margin: 5% auto;
+  height: auto;
+  overflow: auto;
+  color: white;
+  background-color: rgba(25, 25, 26, 0.4);
+  border-radius: 10%;
+  display: flex;
+}
+
+.newsInfo img {
+  max-width: 25%;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#merch {
+  max-width: 20%;
+}
+
+.newsInfo p {
+  padding: 2.5% 5%;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+.newsInfo p span {
+  display: block;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 1.3em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.newsInfo:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#gallery {
+  width: 50%;
+  height: auto;
+}
+
+.picturesTitle h4 {
+  margin: 5% auto;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Caveat', cursive;
+  background-color: rgba(231, 87, 6, 0.5);
+  width: 50%;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pictures img {
+  border: solid black 2px;
+  border-radius: 10px;
+}
+
+#picture1 {
+  max-width: 45%;
+  margin-left: 5%;
+  margin-bottom: 3.5%;
+}
+
+#picture2 {
+  max-width: 40%;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 3.5%;
+}
+
+#picture3 {
+  max-width: 40%;
+  margin-left: 5%;
+  margin-bottom: 3.5%;
+}
+
+#picture4 {
+  max-width: 48%;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 3.5%;
+}
+
+#picture5 {
+  max-width: 35%;
+  margin-left: 5%;
+}
+
+#picture6 {
+  max-width: 52%;
+  float: right;
+  margin-right: 5%;
+}
+
+.pictures img:hover {
+  animation-name: galleryHover;
+  animation-duration: 3s;
+}
+
+footer {
+  background-image: url("../images/footer.jpg");
+  background-size: 100% 100%;
+  font-family: 'Neucha', cursive;
+  max-width: 100%;
+  height: auto;
+  color: rgb(208, 208, 208);
+  background-color: rgb(15, 6, 36);
+  text-align: center;
+}
+
+footer h6 {
+  font-size: 1em;
+  padding-top: 0.7%;
+}
+
+footer h6:hover {
+  animation-name: footerAnim;
+  animation-duration: 5s;
+}
+
+.footerContainer {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footerContainer a {
+  text-decoration: none;
+  color: rgb(85, 17, 79);
+  margin-right: 5%;
+  display: inline-block;
+  padding-bottom: 0.3%;
+  color: rgb(145, 3, 185);
+  font-size: 105%;
+}
+
+.footerContainer a:hover {
+  animation-name: footerLink;
+  animation-duration: 2s;
+}
+
+@keyframes logoPinch {
+  50% {
+    transform: rotateY(40deg);
+  }
+
+  75% {
+    transform: rotateY(-20deg);
+  }
+}
+
+@keyframes socialLinkEnlarge {
+  50% {
+    transform: rotateY(400deg);
+  }
+}
+
+@keyframes btnsHover {
+  0% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px rgb(0, 0, 0);
+  }
+
+  50% {
+    background-color: rgb(231, 126, 53);
+    text-shadow: 0px 2.5px rgb(0, 0, 0);
+    box-shadow: 0px 0px black;
+    color: rgba(0, 0, 0, 0);
+  }
+
+  75% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px rgb(0, 0, 0);
+  }
+
+  100% {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes galleryHover {
+  50% {
+    transform: scale(1.1);
+    border-color: rgb(255, 191, 0);
+  }
+
+}
+
+@keyframes footerLink {
+  50% {
+    color: white;
+  }
+}
+
+@keyframes footerAnim {
+  0% {
+    color: rgb(208, 208, 208);
+    text-shadow: 3px 1px rgb(0, 0, 0);
+  }
+
+  50% {
+    color: rgb(28, 89, 150, 0.1);
+    text-shadow: 3px 1px rgb(255, 255, 255);
+  }
+
+  100% {
+    color: rgb(208, 208, 208);
+    text-shadow: 3px 1px rgb(0, 0, 0);
+  }
+}
+
+@media (max-width: 1100px) {
+  #logo {
+    max-width: 140%;
+  }
+
+  .headerSocial {
+    width: 40%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  #leftPanel {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  #leftPanel h3 {
+    font-size: 1.5em;
+  }
+  #leftPanel p {
+    font-size: 1.6em;
+    line-height: 1.3em;
+    overflow: auto;
+  }
+
+  main {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  main h3 {
+    font-size: 1.5em;
+  }
+  main p {
+    font-size: 1.6em;
+    line-height: 1.3em;
+    overflow: auto;
+  }
+
+  #rightPanel {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    width: 100%;
+  }
+  #rightPanel h3 {
+    font-size: 1.5em;
+  }
+  #rightPanel p {
+    font-size: 1.6em;
+    line-height: 1.3em;
+    overflow: auto;
+  }
+
+  .newsInfo {
+    height: 200px;
+    overflow: auto;
+  }
+
+  .newsInfo img {
+    max-width: 40%;
+    height: 100px;
+  }
+
+
+  @media (max-width: 500px) {
+    .container {
+      display: block;
+    }
+
+    #leftPanel {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+
+    main {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+
+    #rightPanel {
+      width: 100%;
+    }
+
+    #leftPanel p {
+      text-indent: 0;
+    }
+
+    main p {
+      text-indent: 0;
+    }
+
+    #rightPanel p {
+      text-indent: 0;
+    }
+
+    #logo {
+      margin-left: 120px;
+    }
+
+    .scrollButton {
+      margin-right: 10%;
+    }
+
+    #btns li a {
+      font-size: 0.7em;
+      margin-right: 50px;
+      display: absolute;
+      float: right;
+    }
+
+    .headerSocial {
+      width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    #news h4 {
+      font-size: 2em;
+    }
+
+    .newsInfo img {
+      display: none;
+    }
+
+    #picture1 {
+      max-width: 140%;
+    }
+
+    #picture2 {
+      max-width: 90%;
+    }
+
+    #picture3 {
+      max-width: 100%;
+    }
+
+    #picture4 {
+      max-width: 90%;
+    }
+
+    #picture5 {
+      max-width: 80%;
+    }
+
+    #picture6 {
+      max-width: 90%;
+    }
+
+    .footerContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footerContainer a {
+      margin-bottom: 3%;
+    }
+}
