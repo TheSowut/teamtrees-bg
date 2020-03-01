@@ -10,6 +10,7 @@ html {
 .mainPanel1 {
   background: url("../images/wallpaper.jpg") right top fixed no-repeat;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .scrollButton {
@@ -25,9 +26,11 @@ html {
   display: none;
   width: 6em;
   height: 3em;
-  background-color: rgba(28, 209, 23, 0.5);
+  background-color: rgba(28, 199, 23, 0.5);
   box-shadow: 2px 2px rgb(0, 0, 0);
   border-radius: 10%;
+  color: white;
+  text-shadow: 1px 2px black;
 }
 
 #scrollToTop:hover {
@@ -37,7 +40,6 @@ html {
 #scrollToTop span {
   font-size: 150%;
   font-family: 'Neucha', cursive;
-  text-shadow: 1px 1px white;
 }
 
 header {
@@ -52,8 +54,8 @@ header {
 }
 
 #logo {
-  max-width: 100%;
-  margin-left: 5%;
+  max-width: 80%;
+  margin: 2%;
 }
 
 #logo:hover {
@@ -85,7 +87,7 @@ nav {
   width: 50%;
   margin: 5em auto;
   margin-bottom: 10%;
-  height: 1cm;
+  height: 5vh;
   color: white;
 }
 
@@ -102,7 +104,7 @@ nav {
 #btns li a {
   text-decoration: none;
   font-size: 150%;
-  padding: 10px;
+  padding: 13%;
   border: solid black;
   border-radius: 10%;
   box-shadow: 3px 3px black;
@@ -117,16 +119,16 @@ nav {
 
 .container {
   margin: 0 auto;
-  width: 95%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
 }
 
 #leftPanel {
   width: 30%;
-  height: 10cm;
+  height: 50vh;
   border-radius: 5%;
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   margin-bottom: 10%;
   overflow: auto;
@@ -165,7 +167,7 @@ nav {
 
 main {
   width: 30%;
-  height: 10cm;
+  height: 50vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   overflow: auto;
@@ -197,7 +199,7 @@ main p {
 
 #rightPanel {
   width: 30%;
-  height: 10cm;
+  height: 50vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   overflow: auto;
@@ -234,7 +236,7 @@ main p {
 
 .newsAndGallery {
   width: 90%;
-  height: auto;
+  height: 95vh;
   margin: 0 5%;
   display: flex;
 }
@@ -359,7 +361,9 @@ main p {
 
 footer {
   background-image: url("../images/footer.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   font-family: 'Neucha', cursive;
   max-width: 100%;
   height: auto;
@@ -473,7 +477,11 @@ footer h6:hover {
   }
 }
 
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
+  .mainPanel1 {
+    height: 200vh;
+  }
+
   #logo {
     max-width: 140%;
   }
@@ -487,14 +495,14 @@ footer h6:hover {
   }
 
   #leftPanel {
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10%;
     width: 100%;
-    margin-bottom: 5%;
   }
+
   #leftPanel h3 {
     font-size: 1.5em;
   }
+
   #leftPanel p {
     font-size: 1.6em;
     line-height: 1.3em;
@@ -505,11 +513,12 @@ footer h6:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10%;
     width: 100%;
-    margin-bottom: 5%;
   }
+
   main h3 {
     font-size: 1.5em;
   }
+
   main p {
     font-size: 1.6em;
     line-height: 1.3em;
@@ -521,9 +530,11 @@ footer h6:hover {
     border-radius: 10%;
     width: 100%;
   }
+
   #rightPanel h3 {
     font-size: 1.5em;
   }
+
   #rightPanel p {
     font-size: 1.6em;
     line-height: 1.3em;
@@ -540,8 +551,7 @@ footer h6:hover {
     height: 100px;
   }
 
-
-  @media (max-width: 500px) {
+  @media only screen and (max-width: 500px) {
     .container {
       display: block;
     }
@@ -549,15 +559,19 @@ footer h6:hover {
     #leftPanel {
       width: 100%;
       margin-bottom: 5%;
+      height: 50vh;
+      font-size: 0.8em;
     }
 
     main {
       width: 100%;
       margin-bottom: 5%;
+      font-size: 0.8em;
     }
 
     #rightPanel {
       width: 100%;
+      font-size: 0.8em;
     }
 
     #leftPanel p {
@@ -573,18 +587,30 @@ footer h6:hover {
     }
 
     #logo {
-      margin-left: 120px;
+      position: absolute;
+      max-width: 70%;
+      margin-left: 13%;
+    }
+
+    .headerSocial {
+      margin-top: 20%;
     }
 
     .scrollButton {
-      margin-right: 10%;
+      margin-right: 30%;
+    }
+
+    #btns {
+      width: 100%;
+      margin: 3% auto;
+    }
+
+    nav {
+      width: 100%;
     }
 
     #btns li a {
-      font-size: 0.7em;
-      margin-right: 50px;
-      display: absolute;
-      float: right;
+      font-size: 1em;
     }
 
     .headerSocial {
@@ -598,6 +624,10 @@ footer h6:hover {
 
     #news h4 {
       font-size: 2em;
+    }
+
+    .newsInfo p {
+      font-size: 1em;
     }
 
     .newsInfo img {
@@ -631,6 +661,7 @@ footer h6:hover {
     .footerContainer {
       display: flex;
       flex-direction: column;
+      padding-top: 10%;
     }
 
     .footerContainer a {
