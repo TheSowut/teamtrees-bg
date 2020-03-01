@@ -126,7 +126,7 @@ nav {
 
 #leftPanel {
   width: 30%;
-  height: 50vh;
+  height: 51vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
@@ -167,7 +167,7 @@ nav {
 
 main {
   width: 30%;
-  height: 50vh;
+  height: 51vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   overflow: auto;
@@ -199,7 +199,7 @@ main p {
 
 #rightPanel {
   width: 30%;
-  height: 50vh;
+  height: 51vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   overflow: auto;
@@ -359,18 +359,15 @@ main p {
   animation-duration: 3s;
 }
 
-footer {
-  background-image: url("../images/footer.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  font-family: 'Neucha', cursive;
-  max-width: 100%;
-  height: auto;
-  color: rgb(208, 208, 208);
-  background-color: rgb(15, 6, 36);
-  text-align: center;
-}
+  footer {
+    padding: 3% 0 1% 0;
+    background-image: url("../images/footer.jpg");
+    background-size: cover;
+    font-family: 'Neucha', cursive;
+    color: rgb(208, 208, 208);
+    background-color: rgb(15, 6, 36);
+    text-align: center;
+  }
 
 footer h6 {
   font-size: 1em;
@@ -389,7 +386,6 @@ footer h6:hover {
   font-size: 0.8em;
   display: flex;
   justify-content: center;
-
 }
 
 .footerContainer a {
@@ -661,7 +657,7 @@ footer h6:hover {
     .footerContainer {
       display: flex;
       flex-direction: column;
-      padding-top: 10%;
+      padding-top: 5%;
     }
 
     .footerContainer a {
