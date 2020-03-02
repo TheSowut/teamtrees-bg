@@ -7,10 +7,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+}
+
 .mainPanel1 {
   background: url("../images/wallpaper.jpg") right top fixed no-repeat;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .scrollButton {
@@ -126,7 +131,7 @@ nav {
 
 #leftPanel {
   width: 30%;
-  height: 51vh;
+  height: 52vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
@@ -167,7 +172,7 @@ nav {
 
 main {
   width: 30%;
-  height: 51vh;
+  height: 52vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   overflow: auto;
@@ -199,7 +204,7 @@ main p {
 
 #rightPanel {
   width: 30%;
-  height: 51vh;
+  height: 52vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   overflow: auto;
@@ -231,7 +236,8 @@ main p {
 
 .newsAndGalleryBackground {
   background: url("../images/wallpaper2.jpg") right top fixed no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .newsAndGallery {
@@ -264,7 +270,8 @@ main p {
   overflow: auto;
   color: white;
   background-color: rgba(25, 25, 26, 0.4);
-  border-radius: 10%;
+  border-radius: 2%;
+  box-shadow: inset 1px 1px 5px black, inset -1px -1px 5px black;
   display: flex;
 }
 
@@ -314,7 +321,7 @@ main p {
 
 .pictures img {
   border: solid black 2px;
-  border-radius: 10px;
+  border-radius: 5%;
 }
 
 #picture1 {
