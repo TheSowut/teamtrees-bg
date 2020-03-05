@@ -59,7 +59,7 @@ header {
 }
 
 #logo {
-  max-width: 80%;
+  max-width: 85%;
   margin: 2%;
 }
 
@@ -71,7 +71,7 @@ header {
 
 .headerSocial {
   float: right;
-  width: 23%;
+  width: 24%;
 }
 
 .headerSocial img {
@@ -90,10 +90,9 @@ header {
 
 nav {
   width: 50%;
-  margin: 5em auto;
+  margin: 6% auto;
   margin-bottom: 10%;
-  height: 5vh;
-  color: white;
+  height: 4vh;
 }
 
 #btns {
@@ -129,13 +128,13 @@ nav {
   justify-content: space-between;
 }
 
-#leftPanel {
+#leftPanel, main, #rightPanel {
   width: 30%;
-  height: 52vh;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   margin-bottom: 5%;
+  padding-bottom: 2%;
   overflow: auto;
 }
 
@@ -155,28 +154,18 @@ nav {
   margin: auto;
 }
 
-#leftPanel p {
-  padding-top: 2%;
-  margin: 3% 5%;
+#leftPanel p, main p, #rightPanel p {
+  margin: 6% 5%;
   color: rgb(255, 255, 255);
   font-size: 1.1em;
-  text-indent: 30px;
-  line-height: 25px;
+  text-indent: 1.5em;
+  line-height: 1.5em;
 }
 
 #leftPanel a {
   color: white;
   text-decoration: none;
   font-style: italic;
-}
-
-main {
-  width: 30%;
-  height: 52vh;
-  border-radius: 5%;
-  background-color: rgba(255, 255, 255, 0.1);
-  overflow: auto;
-  margin-bottom: 5%;
 }
 
 main:hover {
@@ -194,24 +183,6 @@ main h3{
   margin: auto;
 }
 
-main p {
-  padding-top: 2%;
-  margin: 3% 5%;
-  color: rgb(255, 255, 255);
-  font-size: 1.1em;
-  text-indent: 30px;
-  line-height: 25px;
-}
-
-#rightPanel {
-  width: 30%;
-  height: 52vh;
-  border-radius: 5%;
-  background-color: rgba(255, 255, 255, 0.1);
-  overflow: auto;
-  margin-bottom: 5%;
-}
-
 #rightPanel:hover {
   color: rgb(255, 255, 255);
 }
@@ -227,15 +198,6 @@ main p {
   margin: auto;
 }
 
-#rightPanel p {
-  padding-top: 2%;
-  margin: 3% 5%;
-  color: rgb(255, 255, 255);
-  font-size: 1.1em;
-  text-indent: 30px;
-  line-height: 25px;
-}
-
 .newsAndGalleryBackground {
   background: url("../images/wallpaper2.jpg") right top fixed no-repeat;
   background-size: cover;
@@ -247,6 +209,11 @@ main p {
   height: 95vh;
   margin: 0 5%;
   display: flex;
+}
+
+.newsAndGallery h4{
+   text-shadow: 1px 1px black;
+   color: white;
 }
 
 #news {
@@ -263,6 +230,16 @@ main p {
   width: 50%;
   border-radius: 50px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+#news h4:hover {
+  animation-name: newsTitleHover;
+  animation-duration: 2s;
+}
+
+#gallery h4:hover {
+  animation-name: galleryTitleHover;
+  animation-duration: 2s;
 }
 
 .newsInfo {
@@ -368,15 +345,15 @@ main p {
   animation-duration: 3s;
 }
 
-  footer {
-    padding: 3% 0 1% 0;
-    background-image: url("../images/footer.jpg");
-    background-size: cover;
-    font-family: 'Neucha', cursive;
-    color: rgb(208, 208, 208);
-    background-color: rgb(15, 6, 36);
-    text-align: center;
-  }
+footer {
+  padding: 3% 0 1% 0;
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  font-family: 'Neucha', cursive;
+  color: rgb(208, 208, 208);
+  background-color: rgb(15, 6, 36);
+  text-align: center;
+}
 
 footer h6 {
   font-size: 1em;
@@ -448,6 +425,18 @@ footer h6:hover {
 
   100% {
     color: rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes newsTitleHover {
+  50% {
+    background-color: rgba(0, 0, 150, 0.5);
+  }
+}
+
+@keyframes galleryTitleHover {
+  50% {
+    background-color: rgba(245, 81, 0, 0.6);
   }
 }
 
@@ -616,6 +605,7 @@ footer h6:hover {
 
     nav {
       width: 100%;
+      margin: 45% auto 20% auto;
     }
 
     #btns li a {
