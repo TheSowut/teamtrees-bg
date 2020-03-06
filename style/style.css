@@ -31,7 +31,7 @@ body {
   display: none;
   width: 6em;
   height: 3em;
-  background-color: rgba(28, 199, 23, 0.5);
+  background-color: rgba(5, 160, 0, 0.7);
   box-shadow: 2px 2px rgb(0, 0, 0);
   border-radius: 10%;
   color: white;
@@ -39,7 +39,8 @@ body {
 }
 
 #scrollToTop:hover {
-  background-color: rgba(5, 176, 1, 0.5);
+  animation-name: scrollBtnHover;
+  animation-duration: 2s;
 }
 
 #scrollToTop span {
@@ -92,7 +93,7 @@ nav {
   width: 50%;
   margin: 6% auto;
   margin-bottom: 10%;
-  height: 4vh;
+  height: 3vh;
 }
 
 #btns {
@@ -155,7 +156,7 @@ nav {
 }
 
 #leftPanel p, main p, #rightPanel p {
-  margin: 6% 5%;
+  margin: 4% 5% 0 5%;
   color: rgb(255, 255, 255);
   font-size: 1.1em;
   text-indent: 1.5em;
@@ -428,6 +429,12 @@ footer h6:hover {
   }
 }
 
+@keyframes scrollBtnHover {
+  50% {
+    background: rgba(5, 160, 0, 1);
+  }
+}
+
 @keyframes newsTitleHover {
   50% {
     background-color: rgba(0, 0, 150, 0.5);
@@ -564,7 +571,7 @@ footer h6:hover {
 
   @media only screen and (max-width: 500px) {
     .mainPanel1 {
-      height: 200vh;
+      height: auto;
     }
 
     .container {
