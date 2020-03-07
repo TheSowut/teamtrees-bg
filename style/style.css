@@ -390,6 +390,7 @@ footer h6:hover {
   animation-duration: 2s;
 }
 
+/* Animation for mouse hover event on the logo of teamtrees. */
 @keyframes logoPinch {
   50% {
     transform: rotateY(40deg);
@@ -400,12 +401,14 @@ footer h6:hover {
   }
 }
 
+/* Animations for mouse hover event on the social links images. */
 @keyframes socialLinkEnlarge {
   50% {
     transform: rotateY(400deg);
   }
 }
 
+/* Animations for mouse hover event on the page nagivation buttons. */
 @keyframes btnsHover {
   0% {
     color: rgba(0, 0, 0, 0);
@@ -429,24 +432,28 @@ footer h6:hover {
   }
 }
 
+/* An animation for house hover on the Scroll to Top buttom. */
 @keyframes scrollBtnHover {
   50% {
     background: rgba(5, 160, 0, 1);
   }
 }
 
+/* An animation for mouse hover event on the News heading. */
 @keyframes newsTitleHover {
   50% {
     background-color: rgba(0, 0, 150, 0.5);
   }
 }
 
+/* An animation for mouse hover event on the Gallery heading. */
 @keyframes galleryTitleHover {
   50% {
     background-color: rgba(245, 81, 0, 0.6);
   }
 }
 
+/* An animation for mouse hover event on each of the gallery images. */
 @keyframes galleryHover {
   50% {
     transform: scale(1.1);
@@ -455,12 +462,14 @@ footer h6:hover {
 
 }
 
+/* An animation for mouse hover event on the links of the footer. */
 @keyframes footerLink {
   50% {
     color: white;
   }
 }
 
+/* Animation for mouse hover on the copyright. */
 @keyframes footerAnim {
   0% {
     color: rgb(208, 208, 208);
@@ -478,31 +487,37 @@ footer h6:hover {
   }
 }
 
+/* A media query for wider monitors */
 @media only screen and (max-width: 1200px) {
   .mainPanel1 {
-    height: 250vh;
+    height: 230vh;
   }
 
   #logo {
-    max-width: 140%;
-  }
-
-  nav {
-    width: 80%;
-    justify-content: space-around;
+    max-width: 100%;
   }
 
   .headerSocial {
-    width: 40%;
+    width: 30%;
+  }
+
+  nav {
+    width: 60%;
+    justify-content: space-around;
+  }
+
+  #btns li {
+    transform: scale(0.8);
   }
 
   .container {
     display: block;
   }
 
-  #leftPanel {
+  #leftPanel, main, #rightPanel {
     border-radius: 25px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto 5% auto;
   }
 
   #leftPanel h3 {
@@ -518,12 +533,6 @@ footer h6:hover {
     overflow: auto;
   }
 
-  main {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    width: 100%;
-  }
-
   main h3 {
     font-size: 1.9em;
     border-radius: 1%;
@@ -535,12 +544,6 @@ footer h6:hover {
     font-size: 1.3em;
     line-height: 1.3em;
     overflow: auto;
-  }
-
-  #rightPanel {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    width: 100%;
   }
 
   #rightPanel h3 {
@@ -569,6 +572,7 @@ footer h6:hover {
     display: none;
   }
 
+  /* A media query for mobile users */
   @media only screen and (max-width: 500px) {
     .mainPanel1 {
       height: auto;
