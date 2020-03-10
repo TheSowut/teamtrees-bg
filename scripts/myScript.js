@@ -16,6 +16,7 @@ function scrollToTop() {
 function scrollFunction() {
   if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
     btnScroll.style.display = "block";
+    btnScroll.style.transition = "all 1s";
     var leftPanel = document.getElementById("leftPanel");
     leftPanel.style.transition = "all 1s";
     leftPanel.style.backgroundColor = "rgba(0, 0, 0, 0.5)";

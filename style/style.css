@@ -27,14 +27,6 @@ body {
   display: block;
 }
 
-.scroll-fadeIn {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-}
-
 #scrollToTop {
   display: none;
   width: 6em;
@@ -44,11 +36,8 @@ body {
   border-radius: 10%;
   color: white;
   text-shadow: 1px 2px black;
-}
-
-#scrollToTop:hover {
-  animation-name: scrollBtnHover;
-  animation-duration: 2s;
+  animation-name: scrollBtnAppear;
+  animation-duration: 1s;
 }
 
 #scrollToTop span {
@@ -215,7 +204,7 @@ main h3{
 
 .newsAndGallery {
   width: 90%;
-  height: 95vh;
+  height: auto;
   margin: 0 5%;
   display: flex;
 }
@@ -440,15 +429,8 @@ footer h6:hover {
   }
 }
 
-/* An animation for house hover on the Scroll to Top buttom. */
-@keyframes scrollBtnHover {
-  50% {
-    background: rgba(5, 160, 0, 1);
-  }
-}
-
 /* A fade in animation for the scroll button. */
-@keyframes fadeInOpacity {
+@keyframes scrollBtnAppear {
 	0% {
 		opacity: 0;
 	}
@@ -509,7 +491,7 @@ footer h6:hover {
 /* A media query for wider monitors */
 @media only screen and (max-width: 1200px) {
   .mainPanel1 {
-    height: 230vh;
+    height: auto;
   }
 
   #logo {
@@ -579,7 +561,7 @@ footer h6:hover {
   }
 
   .newsAndGallery {
-    height: 150vh;
+    height: auto;
   }
 
   .newsInfo {
@@ -717,4 +699,61 @@ footer h6:hover {
     .footerContainer a {
       margin-bottom: 3%;
     }
+}
+
+@media only screen and (max-width: 800px){
+  .mainPanel1 {
+    height: auto;
+  }
+
+  .headerSocial {
+    width: 30%;
+  }
+
+  .headerSocial a img{
+    max-width: 14%;
+  }
+
+  #reddit {
+    max-width: 9.5%;
+  }
+
+  .scrollButton {
+    top: 0;
+    right: 3%;
+  }
+
+  .newsAndGallery {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainPanel1 {
+    height: auto;
+  }
+
+  #leftPanel, main, #rightPanel h1 {
+    font-size: 0.6em;
+  }
+
+  #btns li a {
+    font-size: 1em;
+    box-shadow: 1px 1px black;
+  }
+
+  .scrollButton {
+    top: 0;
+    right: 5%;
+  }
+
+  #scrollToTop span {
+    font-size: 1em;
+    text-shadow: 1px 1px black;
+  }
+
+  #scrollToTop {
+    width: 4em;
+    height: 12vh;
+  }
 }
