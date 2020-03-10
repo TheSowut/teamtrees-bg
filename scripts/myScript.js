@@ -17,10 +17,13 @@ function scrollFunction() {
   if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
     btnScroll.style.display = "block";
     var leftPanel = document.getElementById("leftPanel");
+    leftPanel.style.transition = "all 1s";
     leftPanel.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     var main = document.getElementsByTagName("main")[0];
+    main.style.transition = "all 1s";
     main.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     var rightPanel = document.getElementById("rightPanel");
+    rightPanel.style.transition = "all 1s";
     rightPanel.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   } else {
     btnScroll.style.display = "none";

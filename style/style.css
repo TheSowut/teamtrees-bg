@@ -27,6 +27,14 @@ body {
   display: block;
 }
 
+.scroll-fadeIn {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
 #scrollToTop {
   display: none;
   width: 6em;
@@ -438,6 +446,17 @@ footer h6:hover {
     background: rgba(5, 160, 0, 1);
   }
 }
+
+/* A fade in animation for the scroll button. */
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 
 /* An animation for mouse hover event on the News heading. */
 @keyframes newsTitleHover {
