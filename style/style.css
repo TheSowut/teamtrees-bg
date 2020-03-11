@@ -65,7 +65,6 @@ header {
 #logo:hover {
   animation-name: logoPinch;
   animation-duration: 1.6s;
-  animation-fill-mode: forwards;
 }
 
 .headerSocial {
@@ -279,6 +278,7 @@ main h3 {
 
 .newsInfo:hover {
   background-color: rgba(0, 0, 0, 0.6);
+  transition-duration: 1s;
 }
 
 #gallery {
