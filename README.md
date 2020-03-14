@@ -6,5 +6,5 @@ Bulgarian version of the website **teamtrees.org**, which I created as a corsewo
 <img src="images/demo/landingpage.JPG" width="100%">
 
 ## 🌲 Second Part:
-- The second part of the page is split between the news and the gallery. The news sections contains news about the organization and milestones which have been reached. The gallery is home to pictures from both the cause and alike events from around the world, which can used as links to read more about the tree planting events.
+- The second part of the page is split between the news and the gallery. The news sections contains news about the organization and milestones which have been reached. The gallery is home to pictures from both the cause and alike events from around the world, which can be used to read more about the tree planting events.
 <img src="images/demo/newsandgallery.JPG" width="100%">
