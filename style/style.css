@@ -579,6 +579,7 @@ footer h6:hover {
     }
   }
 
+/* A media query for smaller monitors */
   @media only screen and (max-width: 600px) {
     .mainPanel1 {
       height: auto;
@@ -607,6 +608,18 @@ footer h6:hover {
       width: 4em;
       height: 12vh;
     }
+
+    .pictures img {
+      display: block;
+    }
+
+    #picture1 {
+      max-width: 60%;
+    }
+
+    #picture6 {
+      max-width: 90%;
+    }
   }
 
   /* A media query for mobile users */
@@ -622,7 +635,7 @@ footer h6:hover {
     #logo {
       position: absolute;
       max-width: 70%;
-      margin-left: 13%;
+      margin-left: 15%;
     }
 
     nav {
@@ -723,6 +736,10 @@ footer h6:hover {
     .pictures {
       display: flex;
       flex-direction: column;
+    }
+
+    .pictures img {
+      margin-bottom: 3%;
     }
 
     #picture1 {
