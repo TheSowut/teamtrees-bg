@@ -2,10 +2,6 @@ var btnScroll = document.getElementById("scrollToTop");
 btnScroll.addEventListener("click", scrollToTop);
 window.addEventListener("scroll", scrollFunction);
 
-var copy = document.getElementById("copyright");
-var year = new Date().getFullYear();
-copy.innerHTML = "copyright" + " © " + year + " @pgavazov";
-
 function scrollToTop() {
   document.documentElement.scrollTop = 0;
   // Функция предназначена да работи на Firefox, Chrome, Opera, IE

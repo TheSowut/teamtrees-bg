@@ -345,7 +345,7 @@ main h3 {
 }
 
 footer {
-  padding: 3% 0 1% 0;
+  padding: 2% 0 1% 0;
   background-image: url("../images/footer.jpg");
   background-size: cover;
   font-family: 'Neucha', cursive;
@@ -489,6 +489,42 @@ footer h6:hover {
 }
 
 /* A media query for wider monitors */
+@media only screen and (min-width: 1900px){
+  #scrollToTop {
+    width: 7em;
+    height: 5vh;
+  }
+
+  #scrollToTop span {
+    font-size: 1.7em;
+    text-shadow: 2px 2px black;
+  }
+
+  #btns li {
+    transform: scale(1.2);
+  }
+
+  #leftPanel h3, main h3, #rightPanel h3 {
+    font-size: 2.2em;
+    border-radius: 1%;
+  }
+
+  #leftPanel p, main p, #rightPanel p {
+    margin: 0;
+    padding: 2% 4.5%;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    overflow: auto;
+  }
+
+  .newsInfo p {
+    padding: 2.5% 5%;
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+}
+
+/* A media query for medium sized monitors */
 @media only screen and (max-width: 1200px) {
   .mainPanel1 {
     height: auto;
